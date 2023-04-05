@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="main/images/logo2.png">
+
+    <link rel="stylesheet" type="text/css" href="main/styles.css">
+	<!----font aswesome cdn--->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+	<title>Portfolio | SamBaltiev</title>
+	
+</head>
+<body>
+<section>
+	<img src="main/images/background.jpg" id="stars">
+	<img src="main/images/desk-top-phone.jpg" id="phone">
+	
+	
+<div id="text">	
+	<div class="inner">
+
+		<div class="book">
+
+				<input type="checkbox" id="c1">
+				<input type="checkbox" id="c2">
+				<input type="checkbox" id="c3">
+		<div id="cover">
+
+			<div class="circle-spin">
+				<div class="logo-spin"></div>
+					<div class="text-spin">
+						<p>Sam Baltiev - Creative UX/UI Design - Frontend</p>
+					</div>
+				</div>
+			</div>
+				<div class="flip-book">
+					<div class="flip" id="p1">
+						<div class="back">
+							<img src="main/images/code.jpeg">
+							<label class="back-btn" for="c1">BACK</label>
+						</div>
+						<div class="front">
+							<div class="front-text begin">
+							<h2>Hey</h2>
+							<p>"My name is Sam<br>and i'm a Frontend Developer"</p>
+							</div>
+							<label class="next-btn" for="c1">NEXT</label>
+						</div>
+					</div>
+
+
+					<div class="flip" id="p2">
+						<div class="back">
+							<img src="main/images/code-2.png">
+							<label class="back-btn" for="c2">BACK</label>
+						</div>
+						<div class="front">
+							<div class="front-text-secondary">
+							<h2>A bit about me</h2>
+							<p>"I got interested in learning about Frontend Development in early 2020, and since then i've spent the majority of my free time studying and perfecting my skills."</p>
+						</div>
+							<label class="next-btn" for="c2">NEXT</label>
+						</div>
+					</div>
+
+					<div class="flip" id="p3">
+						<div class="back">
+							<div class="front-text">
+							<p>"You can<br>check out more about me on the other pages<br>Just click the menu and enjoy"</p>
+							</div>
+							<label class="back-btn" for="c3">BACK</label>
+						</div>
+						<div class="front">
+							<div class="front-text-secondary">
+								<h2>My social links </h2>
+								<div class="icons-screen">
+									<a href="https://github.com/SamBaltic"><i class="fab fa-github" aria-hidden="true"></i></a>
+									<a href="https://www.linkedin.com/in/samuil-baltiev-875387214/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/sambaltiev_design/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/SamiBaltiev/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+								</div>
+								 <div class="mySkills">
+					                <h1>My Skills</h1>
+					                <div class="skills">
+					                    <div>Html</div>
+					                    <div>JS</div>
+					                    <div>Css</div>
+					                    <div>Sass</div>
+					                    <div>Bootstrap</div>          
+					                    <div>Responsive</div>         
+					                    <div>React</div>
+					         
+					                </div>
+					              </div>  
+							</div>
+							<label class="next-btn" for="c3">NEXT</label>
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="container">
+					
+                <div class="hamburger-menu " id="menubtn" onclick="toggle()">
+                    <div class="bar" id="menu"></div>
+
+                </div>
+
+
+    <!--------------curtain------------->
+                <div id="curtain">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                     <!--   <ul>
+                            <li><a href="about.html" style="--i: 0.05s">about</a></li>
+                            <li><a href="#" style="--i: 0.1s">portfolio</a></li>
+                            <li><a href="#" style="--i: 0.15s">testimonials</a></li>
+                            <li><a href="#" style="--i: 0.2s">services</a></li>
+                        </ul>-->
+                    <div class="folder-layout">
+                        <a href="about.html"><div class="folder">
+
+                            <div class="folder-back">
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="folder-front"><h1>ABOUT</h1></div>
+                                <div class="folder-front right"></div>
+                            </div>
+                        </div></a>
+
+                        <a href="projects.html"><div class="folder">
+                            <div class="folder-back">
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="folder-front"><h1>PROJECTS</h1></div>
+                                <div class="folder-front right"></div>
+                            </div>
+                        </div></a>
+
+
+                        <a href="timeline.html"><div class="folder">
+                            <div class="folder-back">
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="folder-front"><h1>TESTIMONIALS</h1></div>
+                                <div class="folder-front right"></div>
+                            </div>
+                        </div></a>
+
+
+                        <a href="posts.html"><div class="folder">
+                            <div class="folder-back">
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="paper"></div>
+                                <div class="folder-front"><h1>POSTS</h1></div>
+                                <div class="folder-front right"></div>
+                            </div>
+                        </div></a>
+                        
+                    </div>
+                        
+                </div>
+
+            </div>
+
+</div><!------container end---->
+
+		</div>		
+	</div>
+</div>	
+	<div id="text-phone">
+
+		<div class="main center">
+        <div class="box center">
+
+            <img src="main/images/logo.png" alt="">
+            <div>
+                <p class="user_name">Sam Baltiev</p>
+                <p class="skill">Front-end developer</p>
+            </div>
+            <div class="arr_container center ">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <p>Skills</p>
+                <div class="skills">
+                    <div>Html</div>
+                    <div>JS</div>
+                    <div>Css</div>
+                    <div>Sass</div>
+                    <div>Bootstrap</div>          
+                    <div>Responsive</div>         
+                    <div>React</div>
+         
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/SamBaltic"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/samuil-baltiev-875387214/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sambaltiev_design/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/SamiBaltiev/"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="menu">
+                	<a href="about.html">ABOUT</a>
+                	<a href="projects.html">PROJECTS</a>
+                	<a href="timeline.html">TESTIMONIALS</a>
+                	<a href="posts.html">POSTS</a>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+	</div>
+	<div id="text-flip">
+		<div class="card centers">
+		<input type="checkbox" id="" class="btn-profile">
+		<div class="left_container centers">
+			<img src="main/images/logo.png">
+		</div>
+		<div class="right_container centers">
+			<p class="user_name">Sam Baltiev</p>
+			<p class="skills">Front-end developer</p>
+		</div>
+		<div class="slide centers">
+			<div class="links">
+				<ul>
+					<li><a href="about.html">A</a></li>
+					<li><a href="projects.html">PR</a></li>
+					<li><a href="timeline.html">T</a></li>
+					<li><a href="posts.html">PO</a></li>
+				</ul>
+			</div>
+			<div class="icons">
+				<a href="https://github.com/SamBaltic"><i class="fab fa-github" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/samuil-baltiev-875387214/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/sambaltiev_design/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/SamiBaltiev/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<a href="#" id="btn"><img src="main/images/logo.png"></a>
+	<img src="main/images/bg-1.png" id="mountains_front">
+	<!--<img src="main/images/laptop2.png"  id="mountains_behind">--->
+	<img src="main/images/phone.png" id="phone_front">
+	<img src="main/images/tablet.png" id="tablet_front">
+
+</section>
+
+
+
+
+<script src="main/anime.min.js"></script>
+<script src="main/script.js"></script>
+</body>
+</html>
+
+
+
+
+
